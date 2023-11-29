@@ -52,7 +52,7 @@
       #rp-right {
         position: absolute;
         top: 50%;
-        left: 240px; 
+        left: 240px;
         transform: translate(0%, -50%);
         max-width: 100%;
         height: auto;
@@ -61,7 +61,12 @@
       #carpet {
         position: absolute;
         top: 100%;
+        /* Place it below the couch */
         left: 0;
+        transform: rotate(any-hover:);
+        /* Rotate the carpet 90 degrees clockwise */
+        transform-origin: bottom left;
+        /* Set the rotation origin to the bottom left corner */
         max-width: 100%;
         height: auto;
       }
@@ -80,4 +85,3 @@
     </div>
   </body>
 </html>
-
