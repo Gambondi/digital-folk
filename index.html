@@ -9,20 +9,61 @@
       body {
         background-image: url(bg_tv_fuzz.gif);
         font-family: "jaf-Herb", sans-serif;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
       }
-
-
 
       #title {
         color: Black;
         font-size: 48px;
-        text-align: center
+        text-align: center;
       }
 
       .grey {
         color: red;
         font-size: 30px;
-        text-align: center
+        text-align: center;
+      }
+
+      #room-container {
+        position: relative;
+        max-width: 20%;
+        height: auto;
+      }
+
+      #couch {
+        width: 100%;
+        height: auto;
+      }
+
+      #lamp-left {
+        position: absolute;
+        top: 50%;
+        left: -240px;
+        transform: translate(0%, -50%);
+        max-width: 100%;
+        height: auto;
+      }
+
+      #rp-right {
+        position: absolute;
+        top: 50%;
+        left: 240px; 
+        transform: translate(0%, -50%);
+        max-width: 100%;
+        height: auto;
+      }
+
+      #carpet {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        max-width: 100%;
+        height: auto;
       }
     </style>
   </head>
@@ -30,5 +71,13 @@
     <h1 id="title">Welcome to the Crib</h1>
     <h1 class="grey">by Moturi</h1>
     <h1 class="grey">get comfy and be smooth</h1>
+
+    <div id="room-container">
+      <img id="couch" src="pngegg.png" alt="Couch GIF">
+      <img id="lamp-left" src="lamp1.png" alt="Left FloorLamp">
+      <img id="rp-right" src="record players.webp" alt="Record Player Stand">
+      <img id="carpet" src="carpet.png" alt="Carpet">
+    </div>
   </body>
 </html>
+
